@@ -9,7 +9,14 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var mLabel: UILabel!
+    var number: Int = 0
+    @IBAction func perform(_ sender: Any) {
+        print("Presing the buttom")
+        self.number += 1
+        self.mLabel.text = String(number)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
